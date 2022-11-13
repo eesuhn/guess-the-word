@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">NotHangman</string>
+    <string name="app_name">Not Hangman</string>
+
+    <string name="title">Definitely !Hangman</string>
+    <string name="prompt1">Incorrect Letter(s): </string>
+    <string name="hint">Answer</string>
+    <string name="restart">Restart</string>
+    <string name="exit">Exit</string>
 </resources>
