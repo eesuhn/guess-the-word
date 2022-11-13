@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         correctW.setText(word.toString());
-        correctW.setTextSize(25); //correct word text size
+        correctW.setTextSize(28); //correct word text size
     }
     private void addWrongView(String letter){
         TextView wrongLView = (TextView) findViewById(R.id.incorrectL);
