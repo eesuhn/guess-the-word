@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_main);
 
         guessW = findViewById(R.id.input);
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                                 updateUnder(letter, randomW);
                             }
                         }else{
-                            showToast(letter + getString(R.string.existed));
+                            showToast(letter + " " + getString(R.string.existed));
                         }
                     }else{
                         showToast(getString(R.string.empty));
