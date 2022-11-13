@@ -88,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
     }
     private void addWrongView(String letter){
         TextView wrongLView = (TextView) findViewById(R.id.incorrectL);
-        wrongLView.setText(wrongLView.getText() + letter + " ");
+        String temp = wrongLView.getText() + letter + " ";
+        wrongLView.setText(temp);
     }
     public void updateUnder(String letter, String word){
         char letterC = letter.charAt(0);
