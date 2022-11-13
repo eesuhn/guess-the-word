@@ -2,6 +2,7 @@
     <string name="app_name">Not Hangman</string>
 
     <string name="title">Definitely !Hangman</string>
+    <string name="instruction">You have total of 6 tries.</string>
     <string name="prompt1">Incorrect Letter(s): </string>
     <string name="hint">Answer</string>
     <string name="restart">Restart</string>
