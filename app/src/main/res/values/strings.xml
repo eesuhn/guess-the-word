@@ -6,4 +6,7 @@
     <string name="hint">Answer</string>
     <string name="restart">Restart</string>
     <string name="exit">Exit</string>
+
+    <string name="lost">You lost.</string>
+    <string name="won">You won.</string>
 </resources>
