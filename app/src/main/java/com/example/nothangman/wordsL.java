@@ -8,7 +8,10 @@ public class wordsL {
 
     public wordsL(){
         word = new String[]{
-                "Hello"
+                "Hello",
+                "World",
+                "Dad",
+                "Mom"
         };
     }
     public String getRandomW(){
