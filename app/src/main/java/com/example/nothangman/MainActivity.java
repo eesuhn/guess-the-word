@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        guessW = (TextInputEditText) findViewById(R.id.input);
-        correctW = (TextView) findViewById(R.id.guessW);
-        Button restart = (Button) findViewById(R.id.restart);
-        Button exit = (Button) findViewById(R.id.exit);
+        guessW = findViewById(R.id.input);
+        correctW = findViewById(R.id.guessW);
+        Button restart = findViewById(R.id.restart);
+        Button exit = findViewById(R.id.exit);
 
         list = new wordsL();
         String randomW = list.getRandomW();
@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
                                 updateUnder(letter, randomW);
                             }
                         }else{
-                            showToast(letter + "is already existed");
+                            showToast(letter + getString(R.string.existed));
                         }
                     }else{
-                        showToast("Value empty");
+                        showToast(getString(R.string.empty));
                     }
                     InputMethodManager method = (InputMethodManager) view.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
                     method.hideSoftInputFromWindow(guessW.getWindowToken(), 0);
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         correctW.setTextSize(28); //correct word text size
     }
     private void addWrongView(String letter){
-        TextView wrongLView = (TextView) findViewById(R.id.incorrectL);
+        TextView wrongLView = findViewById(R.id.incorrectL);
         String temp = wrongLView.getText() + letter + " ";
         wrongLView.setText(temp);
     }
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
         guessW.setVisibility(View.INVISIBLE);
     }
     public boolean checkUnder(){ //return 1 if _ existed
-        TextView word = (TextView) findViewById(R.id.guessW);
+        TextView word = findViewById(R.id.guessW);
         return word.getText().toString().contains("_");
     }
     public void showToast(String message){

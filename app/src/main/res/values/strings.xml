@@ -10,4 +10,6 @@
 
     <string name="lost">You lost.</string>
     <string name="won">You won.</string>
+    <string name="empty">Value empty</string>
+    <string name="existed"> is already existed</string>
 </resources>
