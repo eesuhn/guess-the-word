@@ -12,8 +12,8 @@ A simple game that allows the player to have fun guessing randomized words
 *Figure 2: Screenshot of sample inputs*
 
 -----
-### Setting Up...
+### Setting Up... with Android Studio
 
-1. Launch the terminal in `AndroidStudioProjects`, which is located in the `Users` directory
+1. Launch the terminal in `AndroidStudioProjects` folder, which is located in the `Users` directory
 2. Run the following command to clone the repository <br>
 `git clone https://github.com/eesuhn/WordGuessingGame.git`
