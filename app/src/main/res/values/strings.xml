@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Not Hangman</string>
+    <string name="app_name">Word Guessing</string>
 
-    <string name="title">Definitely !Hangman</string>
+    <string name="title">Guess The Word!</string>
     <string name="instruction">You have total of 6 tries.</string>
     <string name="prompt1">Incorrect Letter(s): </string>
     <string name="hint">Answer</string>
