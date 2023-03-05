@@ -1,4 +1,4 @@
-## Word Guessing Game 
+## Guess the Word
 - Toast message when correct/ incorrect input
 - Option to restart
 
